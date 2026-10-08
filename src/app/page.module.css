@@ -1,0 +1,129 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.navLogoMark {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: #1d4ed8;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(29, 78, 216, 0.25);
+}
+
+.navLogoA {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: white;
+  font-family: 'Georgia', serif;
+  line-height: 1;
+  z-index: 1;
+}
+
+.navFlagStripes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  height: 8px;
+}
+
+.navStripeBlack { flex: 1; background: #1a1a1a; }
+.navStripeRed   { flex: 1; background: #cc0000; }
+.navStripeGold  { flex: 1; background: #ffcc00; }
+
+.navLogoText {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+}
+
+.navQuit {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1.5px solid #fca5a5;
+  border-radius: 0.6rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.navQuit:hover {
+  background: #fee2e2;
+}
+
+.navPlay {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1.5px solid #bfdbfe;
+  border-radius: 0.6rem;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.navPlay:hover {
+  background: #dbeafe;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+}
+
+.footer p {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
